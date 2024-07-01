@@ -62,7 +62,7 @@ nav > div {
 
 select {
     padding: 5px 20px 5px 20px;
-	background-color: rgba(48, 48, 48, 0.411);
+	background-color: rgba(22, 22, 22, 0.705);
 	background-image: url('..//imagens/icone.png');
 	background-repeat: no-repeat;
 	background-size: 1em auto;
@@ -110,7 +110,6 @@ h1 {
 
 p {
     font-size: 1.125rem;
-    font-weight: 400;
     line-height: 1.5;
 }
 
@@ -123,14 +122,53 @@ img.imgs-central {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 70%;
+    height: 80%;
     margin: auto;
 }
 
+#art-1 p {
+    padding-top: 19px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
 #mail {
-    background-color: rgba(0, 0, 0, 0.568);
+    background-color: rgba(22, 22, 22, 0.705);
     width: 90%;
+    height: 3rem;
     margin: auto;
     padding: 13px;
     margin-bottom: 13px;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.39);
+    border-radius: 0.25rem;
+}
+
+#mail::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#vamos-la {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 140px;
+    text-align: center;
+    margin: auto;
+    font-size: 1.125rem;
+    font-weight: 500;
+    min-height: 3rem;
+    border-radius: 0.25rem;
+    border: none;
+    background: #E50914;
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#arrow {
+    font-size: 1.2em;
+    font-weight: 300;
 }
