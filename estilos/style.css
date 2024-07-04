@@ -121,7 +121,7 @@ p {
 }
 
 img.imgs-central {
-    width: 90vw;
+    width: 435px;
 }
 
 #art-1 {
@@ -186,34 +186,75 @@ img.imgs-central {
     font-weight: 300;
 }
 
-#art-2 {
+/* Aqui começa as seções com texto e video ou foto */
+
+.art-container {  /* Container de todas as seções */
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 8px solid #232323;
+    padding-top: 56px;
+}
+
+.artigos {   /* H1 e P de todas as seções */
+    width: 435px;
 }
 
 #background-tv {
-    width: 435px;
-    height: 450px;
+    width: 90vw;
+    height: 81vw;
     position: relative;
     background: #000000;
     z-index: 1;
 }
 
-#monitor {
+#televisao {
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-image: url("..//imagens/tv.png");
     background-position: center;
-    background-size: 435px;
+    background-size: 87vw;
     background-repeat: no-repeat;
 }
 
 #video-tv {
     position: absolute;
-    top: 72px;
-    left: 57px;
-    width: 318px;
-    height: 291px;
+    top: 21%;
+    left: 14%;
+    width: 71%;
     z-index: -1;
+}
+
+#background-pc {
+    width: 435px;
+    height: 404px;
+    position: relative;
+    z-index: 1;
+}
+
+#monitor {
+    width: 100%;
+    height: 90%;
+    background-image: url('..//imagens/device-pile.png');
+    background-position: center;
+    background-size: 435px;
+    background-repeat: no-repeat;
+}
+
+#video-pc {
+    position: relative;
+    top: -20px;
+    width: 270px;
+    height: 290px;
+    z-index: -1;
+}
+
+#kids {
+    width: 435px;
+    height: 404px;
+}
+
+#kids img {
+    width: 100%;
+    height: 90%;
 }
