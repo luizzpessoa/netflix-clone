@@ -26,24 +26,24 @@
                     <h1>Filmes, séries e muito mais, sem limites</h1>
                     <p>Assista onde quiser. Cancele quando quiser.</p>
                     <p>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
-                    <input type="email" name="e-mail" id="mail" placeholder="Email">
-                    <button id="vamos-la">Vamos lá<i class="material-symbols-outlined" id="arrow">arrow_forward_ios</i>
+                    <input type="email" name="e-mail" class="mail" placeholder="Email">
+                    <button class="vamos-la">Vamos lá<i class="material-symbols-outlined" class="arrow">arrow_forward_ios</i>
                     </button>
                 </article>
             </div>
         </div>
     </header>
     <article class="art-container">
-        <h1 class="artigos">Aproveite na TV</h1>
-        <p class="artigos">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
+        <h1 class="artigos-h1">Aproveite na TV</h1>
+        <p class="artigos-p" class="paragrafos-artigos">Assista em Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, aparelhos de Blu-ray e outros dispositivos.</p>
         <div id="background-tv">
             <div id="televisao"></div>
             <video src="videos/video-tv.m4v" alt="tv" id="video-tv" autoplay loop></video>
         </div>
     </article>
     <article class="art-container">
-        <h1 class="artigos">Assista onde quiser</h1>
-        <p class="artigos">Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV.</p>
+        <h1 class="artigos-h1">Assista onde quiser</h1>
+        <p class="artigos-p">Assista a quantos filmes e séries quiser no celular, tablet, laptop e TV.</p>
         <div id="background-pc">
             <div id="monitor">
                 <video src="videos/st-video.m4v" alt="st" autoplay id="video-pc"></video>
@@ -51,24 +51,67 @@
         </div>
     </article>
     <article class="art-container">
-        <h1 class="artigo">Crie perfis para crianças</h1>
-        <p class="artigo">Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
+        <h1 class="artigos-h1">Crie perfis para crianças</h1>
+        <p class="artigos-p">Deixe as crianças se aventurarem com seus personagens favoritos em um espaço feito só para elas, sem pagar a mais por isso.</p>
         <div id="kids">
             <img src="imagens/infantil.png" alt="infantil">
         </div>
     </article>
     <article class="art-container">
-        <h1>Baixe séries para assistir offline</h1>
-        <p>Assista em um avião, trem ou submarino...</p>
+        <h1 class="artigos-h1">Baixe séries para assistir offline</h1>
+        <p class="artigos-p">Assista em um avião, trem ou submarino...</p>
             <aside>
-                <img src="imagens/mobile.jpg" alt="phone" class="imgs-central">
-                <div>
-                    <img src="imagens/boxshot.png" alt="cartaz-st">
-                    <p>Stranger Things</p>
-                    <p>Download em andamento...</p>
-                    <img src="imagens/download-icon.gif" alt="baixando">
+                <img src="imagens/mobile.jpg" alt="phone" class="imgs-central" id="phone">
+                <div id="dd">
+                    <div id="download">
+                        <img src="imagens/boxshot.png" alt="cartaz-st" id="img-d">
+                        <div id="para-d">
+                            <p id="st-1">Stranger Things</p>
+                            <p id="st-2">Download em andamento...</p>
+                        </div>
+                        <img src="imagens/download-icon.gif" alt="baixando" id="gif-d">
+                    </div>
                 </div>
             </aside>
+    </article>
+    <article class="art-container">
+        <h1>Perguntas frequentes</h1>
+        <div id="label-box">
+            <label for="bt-1" id="label-1"> O que é a Netflix?</label>
+            <input type="checkbox" id="bt-1">
+            <div id="r-1"><p>A Netflix é um serviço de streaming que oferece uma ampla variedade de séries, filmes e documentários premiados em milhares de aparelhos conectados à internet.
+            <br> <br>
+            Você pode assistir a quantos filmes e séries quiser, quando e onde quiser – tudo por um preço mensal acessível. Aqui você sempre encontra novidades. A cada semana, adicionamos novas séries e filmes.</p></div>
+            
+            <label for="bt-2" id="label-2"> Quanto custa a Netflix? </label>
+            <input type="checkbox" id="bt-2">
+            <div id="r-2"><p>Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma taxa mensal única. Os planos variam de R$ 20,90 a R$ 59,90 por mês. Sem contrato nem taxas extras.</p></div>
+
+            <label for="bt-3" id="label-3"> Onde posso assistir?</label>
+            <input type="checkbox" id="bt-3">
+            <div id="r-3"><p>Assista onde quiser, quando quiser. Acesse sua conta Netflix em netflix.com para assistir no computador ou em qualquer aparelho conectado à internet compatível com o aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
+            <br><br>
+            Você também pode baixar suas séries favoritas com o aplicativo Netflix para iOS ou Android. Use os downloads para levar a Netflix para onde quiser sem precisar de conexão com a internet. Leve a Netflix com você para qualquer lugar.</p></div>
+
+            <label for="bt-4" id="label-4"> Como faço para cancelar?</label>
+            <input type="checkbox" id="bt-4">
+            <div id="r-4"><p>A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a sua assinatura a qualquer momento.</p></div>
+
+            <label for="bt-5" id="label-5"> O que eu posso assistir na Netflix</label>
+            <input type="checkbox" id="bt-5">
+            <div id="r-5"><p>A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e muito mais. Assista o quanto quiser, quando quiser.</p></div>
+
+            <label for="bt-6" id="label-6"> A Netflix é adequada para crianças?</label>
+            <input type="checkbox" id="bt-6">
+            <div id="r-6"><p>A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em seu próprio espaço com séries e filmes familiares sob a supervisão dos responsáveis.
+            <br><br>
+            O recurso de controle parental, incluso nos perfis para crianças e protegido por PIN, permite restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos específicos que você não quer que elas assistam.</p></div>
+
+        </div>
+        <p id="p-final"">Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</p>
+        <input type="email" name="e-mail" class="mail" placeholder="Email">
+        <button id="buton-2" class="vamos-la">Vamos lá<i class="material-symbols-outlined" class="arrow">arrow_forward_ios</i>
+        </button>
     </article>
 </body> 
 </html>
